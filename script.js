@@ -16,10 +16,8 @@ function toggle_star(e) {
     if(e.classList.contains('bi-star-fill')) {
         e.classList.remove('bi-star-fill');
         e.classList.add('bi-star');
-        console.log("Faz o L");
     } else {
         e.classList.remove('bi-star');
         e.classList.add('bi-star-fill');
-        console.log("Não Faz o L");
     }
 }
