@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="menu-button" onclick="open_menu()">
+            <i class="bi bi-list"></i>
+            <span>Menu</span>
+        </div>
+        <a href="./index.html">g2 | 1 dia</a>
+    </header>
+
+    <div class="menu menu-closed" id="menu-panel">
+        <i class="bi bi-x-lg button" onclick="close_menu()"></i>
+        <nav>
+            <a href="./index.html" target="_self">Início</a>
+            <a href="hotnew.html" target="_self">Assunto do momento</a>
+            <a href="sobre.html" target="_self">Sobre a g2</a>
+            <a href="https://g1.globo.com/" target="_blank">Conheça também nossa inspiração <i class="bi bi-box-arrow-up-right"></i></a>
+        </nav>
+    </div>
+
+    <div class="wrap">
+        <main>
+            <div class="news-card">
+                <div class="card-header">
+                    <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/10/30/governadores-se-reunem-no-rio-para-discutir-seguranca-publica-apos-operacao-com-mais-de-100-mortos.ghtml" target="_blank"><img src="https://s2-g1.glbimg.com/zrM_dEftgIt4_XYtGd4r_l09nwg=/0x0:3840x2160/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/m/y/xjCN7RToGAY9Sd4exeKw/pgm-globonews-limpo-ao-vivo-20251030-1559-frame-404599.jpeg"></a>
+                </div>
+                <div class="card-body">
+                    <a class="news-title" href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/10/30/governadores-se-reunem-no-rio-para-discutir-seguranca-publica-apos-operacao-com-mais-de-100-mortos.ghtml" target="_blank">Governadores aliados visitam Castro e anunciam 'consórcio da paz'</a>
+                    <p class="news-info">Grupo não apresentou medidas concretas e disse que regras serão definidas para integrar forças.</p>
+                    <span class="news-time">Há 17 minutos</span>
+                    <i class="bi bi-star" onclick="toggle_star(this)"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="news-card">
+                <div class="card-header">
+                    <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/10/30/arsenal-de-fuzis-apreendido-na-penha-e-no-alemao-incluia-armas-de-exercitos-de-venezuela-argentina-peru-e-brasil.ghtml" target="_blank"><img src="https://s2.glbimg.com/p6Eo4bnx-5C5EaE9_tDeDzFdbFo=/346x195/middle/smart/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/O/T/w4Gp8KTkedzOggtXi0rg/fuzil-do-peru.jpg"></a>
+                </div>
+                <div class="card-body">
+                    <a class="news-title" href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/10/30/arsenal-de-fuzis-apreendido-na-penha-e-no-alemao-incluia-armas-de-exercitos-de-venezuela-argentina-peru-e-brasil.ghtml" target="_blank">Arsenal de fuzis apreendido na Penha e no Alemão incluía armas de exércitos de Venezuela, Argentina, Peru e Brasil</a>
+                    <p class="news-info">Armas identificadas por insígnias e apelidos apontam ligação entre o Comando Vermelho e outras regiões.</p>
+                    <p class="news-time">Há 17 minutos</p>
+                    <i class="bi bi-star" onclick="toggle_star(this)"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="news-card">
+                <div class="card-header">
+                    <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/10/30/policiais-mortos-em-operacao-sao-homenageados-em-ato-em-copacabana-fotos.ghtml" target="_blank"><img src="https://s2-g1.glbimg.com/F84W_PUmwuaglwQdGFUNIxd5H38=/0x107:1600x1007/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/l/X/X7F1rjSXe06Eyne2N6Gw/whatsapp-image-2025-10-30-at-16.49.59.jpeg"></a>
+                </div>
+                <div class="card-body">
+                    <a class="news-title" href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2025/10/30/policiais-mortos-em-operacao-sao-homenageados-em-ato-em-copacabana-fotos.ghtml" target="_blank">Ato em Copacabana homenageia policiais mortos em ação contra o CV</a>
+                    <p class="news-info">'Complicado perder um sobrinho assim', diz tio de PM morto.</p>
+                    <p class="news-time">Há 17 minutos</p>
+                    <i class="bi bi-star" onclick="toggle_star(this)"></i>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <section class="topic-section">
+                <h3>Assunto em alta ⭐</h3>
+                <hr>
+                <div class="aside-card">
+                    <div class="card-header">
+                        <a href="hotnew.html" target="_self"><img src="https://ifsertaope.edu.br/petrolina/wp-content/uploads/sites/2/2025/10/Cartaz-1024x711-2-300x298.jpg"></a>
+                    </div>
+                    <div class="card-body">
+                        <a class="news-title" href="hotnew.html" target="_self">Início das aulas do FIC de Django!</a>
+                        <i class="bi bi-star" onclick="toggle_star(this)"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="topic-section">
+                <h3>Participe</h3>
+                <hr>
+                <div class="aside-card">
+                    <div class="card-header">
+                        <a href="https://redeglobo.globo.com/criancaesperanca/" target="_blank"><img id="img-participe" src="https://s2-g1.glbimg.com/4gl6cgYm31GSljFu6GYmjevVpyQ=/0x0:800x800/94x94/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/i/l/ka8x81QbAjkmAYyopovw/crianca-esperanca-2025.jpg"></a>
+                    </div>
+                    <div class="card-body">
+                        <a class="news-title" href="https://redeglobo.globo.com/criancaesperanca/" target="_blank">Faça sua doação para o Criança Esperança 2025</a>
+                        <i class="bi bi-star" onclick="toggle_star(this)"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="topic-section">
+                <h3>Mais tocadas do momento ⭐</h3>
+                <hr>
+                <div class="aside-card">
+                    <div class="card-header">
+                        <a href="https://www.youtube.com/playlist?list=PLXx8PbU9q6fkDPW9DcOBWruPrhGmfR6cF" target="_blank"><img src="https://meuvalordigital.com.br/wp-content/uploads/2024/03/Relembre-8-musicas-que-faziam-muito-sucesso-em-2012.jpg"></a>
+                    </div>
+                    <div class="card-body">
+                        <a class="news-title" href="https://www.youtube.com/playlist?list=PLXx8PbU9q6fkDPW9DcOBWruPrhGmfR6cF" target="_blank">Alegre seu dia ouvindo uma música</a>
+                        <i class="bi bi-star" onclick="toggle_star(this)"></i>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <a href="./index.html">g2 news</a>
+        <p>&copy Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
